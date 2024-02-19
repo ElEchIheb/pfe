@@ -2,8 +2,13 @@
     <div class="container-fluid">
         <div class="navbar-wrapper">
             
-            <a class="navbar-brand" href="javascript:void(0)"> {{ getTitle() === 'Dashboard' ? 'BULLETINS DES SOINS' : (getTitle() === 'Table List' ? 'My Insurance Files' : (getTitle() === 'Typography' ? 'My Last Insurance Files' : getTitle())) }}</a>
-        </div>
+            <a class="navbar-brand" href="javascript:void(0)">
+                {{ getTitle() === 'Dashboard' ? 'BULLETINS DES SOINS' :
+                   (getTitle() === 'Table List' ? 'My Insurance Files' :
+                   (getTitle() === 'Typography' ? 'My Last Insurance Files' :
+                   (getTitle() === 'Icons' ? 'Insurance Admin Page' : getTitle()))) }}
+            </a>
+                    </div>
         
         <button mat-raised-button class="navbar-toggler" type="button" (click)="sidebarToggle()">
             <span class="sr-only">Toggle navigation</span>

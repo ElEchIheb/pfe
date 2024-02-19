@@ -59,8 +59,12 @@
             <a class="nav-link" [routerLink]="[menuItem.path]">
                 <i class="material-icons">{{menuItem.icon}}</i>
                 <p>
-                    {{ menuItem.title === 'Dashboard' ? 'BULLETINS DES SOINS' : (menuItem.title === 'Table List' ? 'My Insurance Files' : (menuItem.title === 'Typography' ? 'My Last Insurance Files' : menuItem.title)) }}
+                    {{ menuItem.title === 'Dashboard' ? 'BULLETINS DES SOINS' :
+                       (menuItem.title === 'Table List' ? 'My Insurance Files' :
+                       (menuItem.title === 'Typography' ? 'My Last Insurance Files' :
+                       (menuItem.title === 'Icons' ? 'Insurance Admin Page' : menuItem.title))) }}
                 </p>
+                
                 
                                 
             </a>
